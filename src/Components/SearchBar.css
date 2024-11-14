@@ -1,0 +1,94 @@
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.inputbox {
+  padding: 8px 10px 8px 10px;
+  border: transparent solid 2px;
+  height: 25px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  border-radius: 25px;
+  background-color: whitesmoke;
+  margin-bottom: 20px;
+  font-family: "Cormorant Garamond", serif;
+}
+.inputbox:hover {
+  border: gray solid 2px;
+}
+.searchIcon {
+  margin-left: 280px;
+  margin-top: -55px;
+}
+.inputbox {
+  width: 300px;
+}
+.searchIcon svg {
+  font-size: 30px;
+}
+.searchbar--output{
+  display: flex;
+  flex-direction: row;
+}
+.dataResult {
+  font-family: "Cormorant Garamond", serif;
+  margin-top: 5px;
+  width: 300px;
+  height: 120px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  overflow: hidden;
+  overflow-y: auto;
+  border-radius: 10px;
+}
+.searchbar--output--title{
+  font-size: 18px;
+}
+.searchbar--output--author{
+  font-size: 16px;
+  word-spacing: 2px;
+}
+.searchbar--output{
+  display:flex;
+  flex-direction: column;
+  gap:5px;
+  line-height: 1.1;
+  margin: 5px;
+}
+.searchbar--output--title{
+  font-weight:bold;
+}
+
+.dataResult::-webkit-scrollbar {
+  display: none;
+}
+
+.dataResult .dataItem {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  color: black;
+  cursor: pointer;
+  padding-left: 5px;
+}
+
+.dataItem:hover {
+  background-color: lightgrey;
+}
+
+@media screen and (max-width: 320px) {
+  .inputbox{
+    height: 25px;
+    width: 260px;
+    margin: 10px 20px;
+  }
+  .searchIcon svg {
+    font-size: 25px;
+  }
+  .searchIcon {
+    margin-left: 270px;
+    margin-top: -45px;
+  }
+}
